@@ -1,0 +1,162 @@
+/*fonts*/
+@font-face {
+  font-family: neurial-bold;
+  src: url(fonts/NeurialGrotesk-Bold.otf) format("truetype");
+}
+
+@font-face {
+  font-family: neurial-bold-italic;
+  src: url(fonts/NeurialGrotesk-BoldItalic.otf) format("truetype");
+}
+
+@font-face {
+  font-family: neurial-regular;
+  src: url(fonts/NeurialGrotesk-Regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: neurial-extra-bold;
+  src: url(fonts/NeurialGrotesk-Extrabold.otf) format("truetype");
+}
+
+@font-face {
+  font-family: neurial-extra-bold-italic;
+  src: url(fonts/NeurialGrotesk-ExtraboldItalic.otf) format("truetype");
+}
+
+@font-face {
+  font-family: neurial-italic;
+  src: url(fonts/NeurialGrotesk-Italic.otf) format("truetype");
+}
+
+@font-face {
+  font-family: neurial-medium;
+  src: url(fonts/NeurialGrotesk-Medium.otf) format("truetype");
+}
+
+@font-face {
+  font-family: neurial-medium-italic;
+  src: url(fonts/NeurialGrotesk-MediumItalic.otf) format("truetype");
+}
+
+$base_color: #212229;
+$pink: #df52a4;
+$blue: #7369ff;
+$ash: #5c6384;
+$white: #fff;
+
+@mixin rounded_border($roundness) {
+  -webkit-border-radius: $roundness;
+  -moz-border-radius: $roundness;
+  border-radius: $roundness;
+}
+
+body {
+  font-family: neurial-regular;
+  color: $base_color;
+}
+
+.navbar-expand-md {
+  .navbar-nav {
+    a.nav-link {
+      font-family: neurial-regular;
+      font-weight: 700;
+      letter-spacing: 1px;
+      &.try-free {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+}
+
+a {
+  color: $base_color;
+  &.try-free {
+    @include rounded_border(20px);
+    border: 1px solid #4a44bb;
+    color: $pink;
+    padding: 0.35rem 1rem;
+    margin-left: 20px;
+    /* border-image: linear-gradient(to right, #b861c6 0%,#ffc7c7 100%);
+     border-image-slice: 1;
+     border-width: 3px;
+     display: block;*/
+  }
+}
+
+.button {
+  &.gradient {
+    background: rgba(187,133,252,1);
+    background: -moz-linear-gradient(left, rgba(187,133,252,1) 0%, rgba(100,117,236,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(187,133,252,1)), color-stop(100%, rgba(100,117,236,1)));
+    background: -webkit-linear-gradient(left, rgba(187,133,252,1) 0%, rgba(100,117,236,1) 100%);
+    background: -o-linear-gradient(left, rgba(187,133,252,1) 0%, rgba(100,117,236,1) 100%);
+    background: -ms-linear-gradient(left, rgba(187,133,252,1) 0%, rgba(100,117,236,1) 100%);
+    background: linear-gradient(to right, rgba(187,133,252,1) 0%, rgba(100,117,236,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bb85fc', endColorstr='#6475ec', GradientType=1 );
+  }
+}
+
+a.get-started {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  color: $white;
+  @include rounded_border(30px);
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  label {
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  img {
+    align-self: center;
+  }
+  &:hover {
+    color: $white;
+  }
+  img {
+    width: 31px;
+    height: 10px;
+  }
+}
+
+section {
+  background-repeat: no-repeat;
+  &.header {
+    background: url(../images/1st_Header/header_bg.png);
+    background-position: bottom center;
+    .banner {
+      h1 {
+        text-transform: capitalize;
+        white-space: pre-line;
+        font-family: neurial-bold;
+        font-size: 2rem;
+        span.highlighted {
+          color: $blue;
+        }
+      }
+      img.features {
+        max-width: 100%;
+        height: auto;
+        margin-top: 2rem;
+      }
+      .banner-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+          font-size: 1.05rem;
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+          color: $ash;
+        }
+      }
+    }
+  }
+  &.we-are-live {
+    background: url(../images/2nd_segment/laptop_asset.png);
+    background-position: top center;
+  }
+}
