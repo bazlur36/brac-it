@@ -138,15 +138,10 @@ section {
       width: 100%;
       height: auto; }
   section.testimony {
-    background-image: url(../images/5th_segment_testimonals/photobar_2.png);
-    background-position: top center;
-    background-size: 100%; }
-    section.testimony .purple-bar {
-      background-image: url(../images/5th_segment_testimonals/photobar.png);
-      background-position: left bottom;
-      background-size: 40% auto;
-      background-repeat: no-repeat;
-      padding: 200px; }
+    background-image: url(../images/5th_segment_testimonals/photobar_m.png);
+    background-position: bottom center;
+    background-size: 100%;
+    padding: 150px; }
   section.see-demo {
     background-image: url(../images/5th_segment_testimonals/photobar_2.png);
     background-position: top center;
