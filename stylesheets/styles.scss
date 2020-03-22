@@ -44,6 +44,8 @@ $pink: #df52a4;
 $blue: #7369ff;
 $ash: #5c6384;
 $white: #fff;
+$main_bg_color: #f4f5fb;
+$purple: #be6ce1;
 
 @mixin rounded_border($roundness) {
   -webkit-border-radius: $roundness;
@@ -54,6 +56,7 @@ $white: #fff;
 body {
   font-family: neurial-regular;
   color: $base_color;
+  background-color: $main_bg_color;
 }
 
 .navbar-expand-md {
@@ -98,11 +101,19 @@ a {
   }
 }
 
+h2 {
+  white-space: pre-line;
+}
+
 a.get-started {
   display: flex;
   justify-content: space-between;
   width: 200px;
   color: $white;
+
+  -webkit-box-shadow: 0px 20px 13px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 20px 13px rgba(0,0,0,0.15);
+  box-shadow: 0px 20px 13px rgba(0, 0, 0, 0.15);
   @include rounded_border(30px);
   text-decoration: none;
   padding: 0.75rem 1rem;
@@ -125,9 +136,11 @@ a.get-started {
 section {
   background-repeat: no-repeat;
   &.header {
-    background: url(../images/1st_Header/header_bg.png);
+    background-image: url(../images/1st_Header/header_bg.png);
     background-position: bottom center;
+    background-size: 100%;
     .banner {
+      padding-top: 50px;
       h1 {
         text-transform: capitalize;
         white-space: pre-line;
@@ -146,6 +159,7 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-bottom: 300px;
         p {
           font-size: 1.05rem;
           margin-top: 1.5rem;
@@ -156,7 +170,54 @@ section {
     }
   }
   &.we-are-live {
-    background: url(../images/2nd_segment/laptop_asset.png);
+    background-image: url(../images/2nd_segment/laptop_asset.png);
+    background-position: -20% -0%;
+    margin-top: -115px;
+    h2 { padding-top: 150px };
+    p {
+      white-space: pre-line;
+    }
+  }
+  &.why-need-brac-jobs {
+    h2 {
+      span {
+        color: $purple;
+      }
+    }
+    p{
+      white-space: pre-line;
+      color: $ash;
+    }
+  }
+  &.key-features-for-hiring {
+    background-image: url(../images/4th_segment/Key_feature_bg.png);
+    background-position: bottom center;
+    background-size: 100%;
+    .various-jobs img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &.testimony {
+    background-image: url(../images/5th_segment_testimonals/photobar_2.png);
     background-position: top center;
+    background-size: 100%;
+    .purple-bar {
+      background-image: url(../images/5th_segment_testimonals/photobar.png);
+      background-position: left bottom;
+      background-size: 40% auto;
+      background-repeat: no-repeat;
+      padding: 200px;
+    }
+  }
+  &.see-demo {
+    background-image: url(../images/5th_segment_testimonals/photobar_2.png);
+    background-position: top center;
+    background-size: 100%;
+    .hi-5 {
+      img {
+        width: 100%;
+      }
+    }
   }
 }
