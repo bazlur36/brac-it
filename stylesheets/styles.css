@@ -64,6 +64,11 @@ a {
 h2 {
   white-space: pre-line; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
 a.get-started {
   display: flex;
   justify-content: space-between;
@@ -150,7 +155,8 @@ section {
     color: #be6ce1; }
   section.why-need-brac-jobs p {
     white-space: pre-line;
-    color: #5c6384; }
+    color: #5c6384;
+    margin-bottom: 40px; }
   section.why-need-brac-jobs .block {
     background-color: #eeeef1;
     -webkit-border-radius: 10px;
@@ -169,6 +175,45 @@ section {
     section.key-features-for-hiring .various-jobs img {
       width: 100%;
       height: auto; }
+    section.key-features-for-hiring h2 {
+      text-align: center;
+      margin-top: 150px;
+      font-weight: bold;
+      margin-bottom: 15px; }
+    section.key-features-for-hiring .content {
+      background-color: #fff;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px; }
+      section.key-features-for-hiring .content ul.navigation {
+        text-align: left; }
+        section.key-features-for-hiring .content ul.navigation li {
+          background-position: left top;
+          padding-left: 100px;
+          background-repeat: no-repeat; }
+        section.key-features-for-hiring .content ul.navigation li.collaborate {
+          background-image: url("../images/4th_segment/main_copy_7.png"); }
+        section.key-features-for-hiring .content ul.navigation li.insightful {
+          background-image: url("../images/4th_segment/main_copy_2.png"); }
+        section.key-features-for-hiring .content ul.navigation li.instant-notifications {
+          background-image: url("../images/4th_segment/main.png"); }
+    section.key-features-for-hiring ul {
+      text-align: center; }
+      section.key-features-for-hiring ul li {
+        list-style: none;
+        display: inline-block; }
+        section.key-features-for-hiring ul li a {
+          display: block;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          border-radius: 25px;
+          padding: 8px 40px;
+          font-weight: bold;
+          color: #5c6384;
+          margin: 15px 10px 0 10px; }
+          section.key-features-for-hiring ul li a:hover, section.key-features-for-hiring ul li a.active {
+            background-color: #f4f5fb;
+            color: #7369ff; }
   section.testimony {
     background-image: url(../images/5th_segment_testimonals/photobar_m.png);
     background-position: bottom center;

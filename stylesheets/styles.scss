@@ -105,6 +105,13 @@ h2 {
   white-space: pre-line;
 }
 
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 a.get-started {
   display: flex;
   justify-content: space-between;
@@ -215,6 +222,7 @@ section {
     p{
       white-space: pre-line;
       color: $ash;
+      margin-bottom: 40px;
     }
     .block {
         background-color: #eeeef1;
@@ -235,6 +243,55 @@ section {
     .various-jobs img {
       width: 100%;
       height: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 150px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .content {
+      background-color: $white;
+      @include rounded_border(10px);
+      ul.navigation {
+
+          text-align: left;
+          li {
+            background-position: left top;
+            padding-left: 100px;
+            background-repeat: no-repeat;
+          }
+          li.collaborate {
+            background-image: url("../images/4th_segment/main_copy_7.png");
+          }
+          li.insightful {
+            background-image: url("../images/4th_segment/main_copy_2.png");
+          }
+          li.instant-notifications {
+            background-image: url("../images/4th_segment/main.png");
+          }
+
+      }
+    }
+    ul {
+      text-align: center;
+      li {
+        list-style: none;
+        display: inline-block;
+        a {
+          display: block;
+          @include rounded_border(25px);
+          padding: 8px 40px;
+          font-weight: bold;
+          color: $ash;
+          &:hover, &.active {
+            background-color: $main_bg_color;
+            color: $blue;
+          }
+          margin: 15px 10px 0 10px;
+
+        }
+      }
     }
   }
   &.testimony {
