@@ -286,7 +286,18 @@ section {
     color: #4fcf82;
     font-size: 1.25rem; }
   section.pricing .col {
+    position: relative;
     padding: 10px 15px; }
+    section.pricing .col .diamond {
+      position: absolute;
+      width: 155px;
+      height: 155px;
+      top: 0;
+      right: 0;
+      display: none; }
+      section.pricing .col .diamond img {
+        width: 100%;
+        height: auto; }
     section.pricing .col > div {
       margin-top: 25px;
       margin-bottom: 25px; }
@@ -314,6 +325,8 @@ section {
       border-radius: 10px;
       color: #fff;
       background-image: linear-gradient(to bottom, #bb85fc, #a881f9, #937df5, #7d79f1, #6475ec); }
+      section.pricing .col:hover .diamond {
+        display: block; }
       section.pricing .col:hover a.button.gradient {
         border-radius: 5px;
         border-top-right-radius: 20px;
