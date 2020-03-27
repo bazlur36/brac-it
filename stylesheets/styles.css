@@ -173,6 +173,7 @@ section {
       font-size: 1.15rem;
       white-space: pre-line; }
   section.key-features-for-hiring {
+    padding-bottom: 150px;
     background-image: url(../images/4th_segment/Key_feature_bg.png);
     background-position: right 150px;
     background-size: 100%; }
@@ -219,10 +220,56 @@ section {
             background-color: #f4f5fb;
             color: #7369ff; }
   section.testimony {
-    background-image: url(../images/5th_segment_testimonals/photobar_m.png);
-    background-position: bottom center;
-    background-size: 100%;
-    padding: 150px; }
+    background: url(../images/5th_segment_testimonals/photobar_m.png);
+    background-color: #fafafd;
+    background-position: right 17px;
+    background-repeat: no-repeat;
+    background-size: 100% 777px; }
+    section.testimony .testimonial {
+      padding: 250px;
+      position: relative; }
+      section.testimony .testimonial .quote-image {
+        position: absolute;
+        top: 137px;
+        left: 101px; }
+        section.testimony .testimonial .quote-image img {
+          width: 200px;
+          height: auto; }
+      section.testimony .testimonial .cube-left-bottom {
+        position: absolute;
+        bottom: -33px;
+        left: -4px; }
+      section.testimony .testimonial .cube-top-right {
+        position: absolute;
+        top: 59px;
+        right: -50px; }
+      section.testimony .testimonial .testify {
+        padding-left: 15%;
+        line-height: 30px; }
+        section.testimony .testimonial .testify p {
+          margin-top: 15px; }
+        section.testimony .testimonial .testify img {
+          width: 60px;
+          height: auto; }
+    section.testimony .image-wrapper {
+      width: 250px;
+      height: 294px;
+      overflow: hidden;
+      -ms-transform: skewY(-8deg);
+      /* IE 9 */
+      transform: skewY(-8deg);
+      /* Standard syntax */
+      -webkit-box-shadow: 50px 71px 129px -88px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 50px 71px 129px -88px rgba(0, 0, 0, 0.75);
+      box-shadow: 50px 71px 129px -88px rgba(0, 0, 0, 0.75); }
+      section.testimony .image-wrapper img {
+        width: 100%;
+        height: auto;
+        margin-top: -18px;
+        -ms-transform: skewY(8deg);
+        /* IE 9 */
+        transform: skewY(8deg);
+        /* Standard syntax */ }
   section.see-demo {
     background-image: url(../images/5th_segment_testimonals/photobar_2.png);
     background-position: top center;
